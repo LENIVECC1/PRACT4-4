@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PRACT4_4.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PRACT4_4"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PRACT4_4">
+
+    <TabBar>
+        <Tab Title="1 вкладка" >
+            
+             <ShellContent Title="1 ВКЛАДКА" ContentTemplate="{DataTemplate local:NewPage1}"/>
+             <ShellContent Title="1 ВКЛАДКА" ContentTemplate="{DataTemplate local:NewPage1}"/>
+        </Tab>
+        <Tab Title="2 вкладка">
+            <ShellContent Title="2 ВКЛАДКА" ContentTemplate="{DataTemplate local:NewPage2}"/>
+        </Tab>
+        <Tab Title="О программе">
+            <ShellContent Title="О ПО" ContentTemplate="{DataTemplate local:NewPage3}"/>
+        </Tab>
+    </TabBar>    
+    
+    
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

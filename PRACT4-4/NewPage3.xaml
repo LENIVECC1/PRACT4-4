@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRACT4_4.NewPage3"
+             Title="О программе">
+    <StackLayout Padding="0,10,0,0">
+        <StackLayout Orientation="Vertical">
+            <StackLayout Padding="0,10,4,0">
+                <Button Text="Создатель" x:Name="Creator" Clicked="Creator_Clicked" />
+            </StackLayout>
+            <StackLayout Padding="0,10,4,0">
+                <Button Text="Что делает программа?" x:Name="Program" Clicked="Program_Clicked"/>
+            </StackLayout>
+            <StackLayout Padding="0,10,0,0">
+                <Button Text="Какая это практическая" x:Name="Number" Clicked="Number_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

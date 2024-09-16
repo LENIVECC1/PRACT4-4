@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRACT4_4.NewPage2"
+             Title="2 СТРАНИЦА">
+
+    <StackLayout>
+        <Label Text="ВЫБЕРИТЕ СЕЗОН" HorizontalOptions="Center" FontSize="Large" TextColor="Bisque"/>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Включить/выключить" VerticalOptions="Center"/>
+            <CheckBox x:Name="off" IsChecked="False" CheckedChanged="off_CheckedChanged"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" x:Name="st1" IsEnabled="False">
+            <RadioButton x:Name="rb2_1" Content="ЗИМА" CheckedChanged="rb2_1_CheckedChanged" TextColor="LightSkyBlue"/>
+            <RadioButton x:Name="rb2_2" Content="ВЕСНА" CheckedChanged="rb2_1_CheckedChanged"  TextColor="Green"/>
+            <RadioButton x:Name="rb2_3" Content="ЛЕТО" CheckedChanged="rb2_1_CheckedChanged"  TextColor="Yellow" />
+            <RadioButton x:Name="rb2_4" Content="ОСЕНЬ" CheckedChanged="rb2_1_CheckedChanged"  TextColor="Orange" />
+        </StackLayout>
+        <StackLayout>
+            <Entry x:Name="text2"  Placeholder="МЕСЯЦА ВЫБРАННОГО СЕЗОНА" IsReadOnly="True" />
+            <Button x:Name="bat" Text="Решение" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
